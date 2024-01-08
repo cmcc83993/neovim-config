@@ -23,6 +23,16 @@ return require('packer').startup(function(use)
   use("theprimeagen/harpoon")
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
+  use("theprimeagen/vim-be-good")
+  use("towolf/vim-helm")
+  use("pearofducks/ansible-vim")
+  use("numToStr/Comment.nvim")
+  use("christoomey/vim-tmux-navigator")
+  use('szw/vim-maximizer')
+  use('tpope/vim-surround')
+  use('vim-scripts/ReplaceWithRegister')
+  use('jose-elias-alvarez/null-ls.nvim')
+  use('lervag/vimtex')
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -32,6 +42,7 @@ return require('packer').startup(function(use)
 		  {'neovim/nvim-lspconfig'},
 		  {'williamboman/mason.nvim'},
 		  {'williamboman/mason-lspconfig.nvim'},
+          { 'jay-babu/mason-null-ls.nvim' },
 
 		  -- Autocompletion
 		  {'hrsh7th/nvim-cmp'},

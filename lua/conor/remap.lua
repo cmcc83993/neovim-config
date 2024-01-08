@@ -1,5 +1,12 @@
 
+-- Window
+vim.keymap.set("n", "<leader>sv", "<C-w>v")
+vim.keymap.set("n", "<leader>sh", "<C-w>s")
+vim.keymap.set("n", "<leader>se", "<C-w>=")
+vim.keymap.set("n", "<leader>sx", ":close<CR>")
+
 vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
