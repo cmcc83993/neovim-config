@@ -19,17 +19,16 @@ git clone https://github.com/cmcc83993/neovim-config.git ~/.config/nvim
 
 ### Install Pre-requisites on Your System
 
-1. Install Packer by following the directions in the [Packer repository](https://github.com/wbthomason/packer.nvim).
-2. Install Node.js 14+ on your machine (ideally 20LTS)
-3. Install dependencies for [Telescope](https://github.com/nvim-telescope/telescope.nvim)
+1. Install Node.js 14+ on your machine (ideally 20LTS)
+2. Install dependencies for [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 
 ## Plugins
 
-Plugins are managed with [Packer](https://github.com/wbthomason/packer.nvim).
+Plugins are managed with [lazy](https://github.com/folke/lazy.nvim).
 
 Main plugins:
 
-- Packer
+- lazy
 - Telescope
 - Rose Pine (theme)
 - Treesitter
@@ -38,16 +37,7 @@ Main plugins:
 - LSP Zero
 - Mason
 
-To get started, install [Packer](https://github.com/wbthomason/packer.nvim) on your system by following the directions in the repository.
-
-Next, open NeoVim (fresh instance!) in the ```~/.config/nvim``` folder (where this repo is). Open ```lua/conor/packer.lua```. Run these commands (in order):
-
-```
-:so
-:PackerSync
-```
-
-Restart NeoVim and then run ```:checkhealth```. Resolve any conflicts you see.
+Installation is simple: Open NeoVim, and Lazy should be installed. The only requirement is that you have an internet connection and access to GitHub. You should check the Lazy installation using ```:checkhealth lazy```.
 
 ## Language Support
 
